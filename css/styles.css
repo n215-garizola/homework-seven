@@ -19,58 +19,128 @@ p {
   margin-bottom: 16px;
 }
 
-.wrapper {
-  min-height: 800px;
-  width: 70%;
-  background-color: beige;
+#app {
+  max-width: 980px;
   margin: 0 auto;
 }
-.wrapper .box {
-  width: 50%;
-  height: 200px;
-  background-color: aqua;
+
+nav {
+  max-width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  width: 90%;
 }
-.wrapper .media-box {
-  width: 600px;
-  height: 100px;
-  background-color: brown;
+nav .logo {
+  width: 92px;
+  height: 42px;
+  display: flex;
+  padding-top: 26px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+nav .logo span {
+  color: black;
+}
+nav .links a {
+  color: black;
+  text-decoration: none;
+}
+nav .links span {
+  color: black;
+  margin: 0 20px;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 800px) {
-  .wrapper {
-    background-color: red;
-  }
-}
-@media all and (max-width: 600px) {
-  .wrapper .media-box {
-    width: 300px;
-  }
-}
-.photos {
-  max-width: 940px;
-  min-height: 300px;
-  background-color: aqua;
+.footer {
+  max-width: 980px;
+  width: 90%;
+  height: 100px;
+  background-color: #79addc;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.photos .photo {
-  width: 300px;
+.footer .logoF {
+  width: 92px;
+  height: 42px;
+  display: flex;
+  padding-top: 26px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
 }
-.photos .photo img {
-  display: block;
+.footer .logoF span {
+  color: white;
 }
-.photos .photo p {
-  font-size: 11px;
-  font-style: italic;
-  text-align: center;
+.footer .copyright {
+  color: white;
+}
+.about {
+  margin-top: 110px;
+  margin-bottom: 107px;
+  width: 90%;
+  max-width: 980px;
+}
+.about .about-header h1 {
+  font-size: 50px;
+}
+.about .about-header .aboutLine {
+  background-color: black;
+  width: 171px;
+  height: 2px;
+  margin-top: -13px;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .about-client-quotes .cQline {
+  background-color: black;
+  width: 255px;
+  height: 2px;
+  margin-top: -13px;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes .client-quote-title {
+  font-size: 40px;
+}
+.about .about-client-quotes .client-box {
+  max-width: 722px;
+  display: flex;
+  position: relative;
+  margin-bottom: 37px;
+}
+.about .about-client-quotes .client-box .client-image {
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 21px;
+}
+.about .about-client-quotes .client-box .client-image img {
+  width: 100%;
+  height: 100%;
+}
+.about .about-client-quotes .client-box .client-quote {
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+.about .about-client-quotes .client-box .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .photos {
-    width: 300px;
+@media screen and (max-width: 750px) {
+  .client-box {
     flex-direction: column;
-    min-height: 940px;
+    display: block;
   }
 }
 

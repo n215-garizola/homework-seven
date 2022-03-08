@@ -1,0 +1,38 @@
+nav {
+  max-width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  width: 90%;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+
+    display: flex;
+    padding-top: 26px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    span {
+      color: black;
+    }
+  }
+
+  .links {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    span {
+      color: black;
+      margin: 0 20px;
+    }
+  }
+}
